@@ -1,9 +1,31 @@
 # react_MaterialUI_vwconverter
-#react#MaterialUI#containerComponent#WhenScreenWidthOver1980px#transform"vw"
+#react#MaterialUI#containerComponent#WhenScreenWidthOver1920px#transform"vw"
 
 
 <br />
 <br />
+
+materialUI의 container 에 maxWidth="xl"로 넣을 경우 로직은 다음과 같다.<br />
+화면 너비가 1920px이하일때는 width가 100%이지만 화면 너비가 그 이상일 때는 container의 너비가 1920px로 한정되고 그 마진이 유동적으로 생긴다.<br />
+container 안에 div를 채울때 width="100%"로 넣으면 상관이 없지만<br/>
+가끔 그 안에 넣는 div가 "vw"단위를 사용하는 경우가 있다. 그럴 때는 너비가 1920px이하일 때는 조금의 오차가 생기지만 그 이상일 때는 상당히 깨짐을 확인할 수 있다.
+<p float:"left"> 
+<img src="https://user-images.githubusercontent.com/31887934/88482332-849d4000-cf9b-11ea-94a6-c8233de96192.png" width="45%">
+<img src="https://user-images.githubusercontent.com/31887934/88482566-080b6100-cf9d-11ea-9039-d074144fb744.png" width="45%">
+</p>
+materailUI container 안에 vw를 넣어도 자연스럽게 100%를 적용한 것 같이 표현하는 것이 본 프로젝트의 목표이다.
+<p float:"left"> 
+<img src="https://user-images.githubusercontent.com/31887934/88482719-232aa080-cf9e-11ea-9f9c-c217585f62a1.png" width="45%">
+<img src="https://user-images.githubusercontent.com/31887934/88482735-47867d00-cf9e-11ea-8d71-9d87c0cd2dd6.png" width="45%">
+<img src="https://user-images.githubusercontent.com/31887934/88482755-6422b500-cf9e-11ea-877a-bc4faef3086e.png" width="45%">
+</p>
+
+<br />
+<p float:"left"> 
+<img src="https://user-images.githubusercontent.com/31887934/88482765-76045800-cf9e-11ea-879c-4a4f840c28b1.png" width="45%">
+<img src="https://user-images.githubusercontent.com/31887934/88482766-7997df00-cf9e-11ea-94a2-14c49db8f665.png" width="45%">
+</p>
+
 <br />
 <br />
 <br />
